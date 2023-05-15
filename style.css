@@ -15,6 +15,10 @@ header{
     justify-content: space-between;
     padding: 30px 100px;
     box-shadow: 1px 2px 1px #c7c6c6;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #ffffff;
 }
 .fa{
     font-weight: lighter;
@@ -57,7 +61,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 50px 100px;
+    padding: 100px 100px;
 }
 
 main h1{
@@ -173,8 +177,6 @@ main .white:hover{
 }
 .last-container{
     display: flex;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 .last-container h2{
     line-height: 40px;
@@ -198,5 +200,310 @@ main .white:hover{
 }
 
 .last .last-btn{
-    width: 18%;
+    width: 20%;
+}
+
+
+
+@media screen and (max-width: 1190px) {
+    .teams-box{
+    width: 220px;
+}
+.teams-box img{
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 1133px) {
+/* header styling */
+header{
+    padding: 30px;
+}
+
+.hero-btn{
+    width: 50px;
+    padding: 15px 20px;
+}
+
+.last .last-btn{
+    width: 25%;
+}
+}
+
+@media screen and (max-width: 949px){
+header{
+    padding: 30px 30px;
+}
+
+.hero-btn{
+    width: 50px;
+    padding: 10px;
+}
+.logo{
+    width: 100px;
+}
+
+
+main h1{
+    width: 100%;
+    font-size: 40px;
+}
+main p{
+    width: 100%;
+    line-height: 20px;
+}
+
+
+.trust p{
+    width: 100%;
+}
+.teams{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.teams-box{
+    width: 180px;
+    height: 100px;
+    background-color: #F9F9F9;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teams-box img{
+    width: 100%;
+}
+.why{
+    padding: 50px 30px;
+}
+.why p{
+    width: 100%;
+    line-height: 28px;
+}
+.reason h3{
+    line-height: 28px;
+    font-size: 18px;
+}
+.reason p{
+    width: 100%;
+    font-size: 12px;
+}
+.reason{
+    align-items:normal;
+}
+.last-img{
+   height: 90%;
+    width: 170%;
+}
+.last{
+    padding: 50px 30px;
+}
+
+} 
+
+@media screen and (max-width: 790px){
+    header{
+        padding: 20px;
+    }
+    
+    .hero-btn{
+        width: 100px;
+        padding: 8px 5px;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .logo{
+        width: 80px;
+    }
+    
+    .hamburger-menu {
+        height: 35px;
+        width: 45px;
+        position: relative;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 4;
+      }
+    
+      .ham-bar {
+        width: 70%;
+        height: 4px;
+        background-color: #065666;
+        border-radius: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.6s, opacity 0.8s, top 0.6s;
+      }
+    
+      .bar-top {
+        top: 25%;
+      }
+      .bar-bottom {
+        top: 75%;
+      }
+      .hamburger-menu.active .bar-top {
+        transform: translate(-50%, -50%) rotate(-315deg);
+        top: 50%;
+      }
+      .hamburger-menu.active .bar-mid {
+        opacity: 0;
+      }
+      .hamburger-menu.active .bar-bottom {
+        transform: translate(-50%, -50%) rotate(-225deg);
+        top: 50%;
+      }
+      #nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 400px;
+        width: 100%;
+        transition: 0.5s;
+        background: #ECF0F3;
+        text-align: center;
+        z-index: 2;
+      }
+      #nav-links a {
+        padding: 30px 20px;
+        margin-top: 50px;
+      }
+      #nav-links.active {
+        right: 0;
+      }
+      #nav-links a {
+        display: block;
+      }
+      #nav-links select{
+        display: block;
+        padding: 10px 5px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 25px;
+        background-color: transparent;
+      }
+    
+    main h1{
+        width: 100%;
+        font-size: 23px;
+        line-height: 30px;
+        padding: 30px 0 10px;
+    }
+    main p{
+        width: 85%;
+        line-height: 18px;
+        padding-bottom: 20px;
+    }
+    main{
+        padding: 60px 10px 20px;
+    }
+
+    .trust{
+        margin: 20px 20px;
+    }
+    .trust h2{
+        line-height: 30px;
+        text-align: center;
+    }
+    .trust p{
+        line-height: 18px;
+        width: 100%;
+        margin: 10px 0px 20px;
+        width: 90%;
+    }
+    .teams{
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .teams-box{
+        width: 150px;
+        max-width: 175px;
+        height: 90px;
+        margin: 4px;
+    }
+    .teams-box img{
+        width: 90%;
+    }
+    
+/* why section styling */
+.why{
+    padding: 30px 20px;
+}
+.why h1{
+    line-height: 20px;
+    margin-bottom: 18px;
+}
+.why p{
+    width: 100%;
+    line-height: 18px;
+    font-size: 16px;
+}
+
+.reason{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.reason h3{
+    line-height: 16px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.reason div{
+    width: 50%;
+    margin-left: 5px;
+}
+.reason p{
+    width: 100%;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+    
+/* last section styling */
+
+.last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+.last-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.last-container h2{
+    line-height: 26px;
+    padding: 8px 0;
+}
+.last-container p{
+    line-height: 20px;
+    padding: 15px 0;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.last-container h3{
+    line-height: 18px;
+    padding: 5px 0;
+}
+.last-container img{
+    width: 300px;
+}
+.last-box{
+    margin-left: 30px;
+}
+
+.last .last-btn{
+    width: 40%;
+    margin-top: 20px;
+    text-align: center;
+}
+
 }
